@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, FormEvent } from "react";
@@ -124,7 +125,7 @@ export default function Form() {
                 />
 
             </div>
-            <div className="xl:flex xl:space-x-10">
+            <div className="xl:flex xl:space-x-5 justify-between">
                 <div>
 
             <form onSubmit={formHandleSubmit} style={{ background: "url(/bgForm.jpg)" }} className="bg-cover bg-center border-2 border-gray-500 bg-gray-400 py-5 md:py-10 lg:py-20 px-3 md:px-8 lg:px-16 xl:px-5">
@@ -149,7 +150,10 @@ export default function Form() {
             </form>
                 </div>
                     <div>
-            <div className="h-auto py-8">
+
+                                    {/* Resume Preview */}
+
+            <div className="h-auto py-8 lg:py-0 w-full">
                 <div className="bg-gray-400 p-8 space-y-3 lg:space-y-5 xl:space-y-8 border-2 border-gray-500">
                     <h2 className="text-center font-extrabold text-xl md:text-4xl 2xl:text-7xl lg:text-5xl underline">Resume Preview</h2>
 
@@ -179,26 +183,26 @@ export default function Form() {
                     <div className="lg:px-10">
                         <h4 className="font-bold text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Work Experience</h4>
                     </div>
-                    <div className="grid grid-cols-3 font-bold text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xl:px-24">
+                    <div className="grid grid-cols-3 lg:gap-2 font-bold text-sm md:text-base lg:text-lg lg:ml-10 ">
                         <label>[From-To]</label>
                         <label>[Job Position]</label>
                         <label>[Company Name]</label>
                     </div>
-                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xl:px-24">
+                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg lg:ml-10 ">
                         {/* First Field */}
                         <p> {experience.experienceFromTo1}</p>
                         <p>{experience.experiencePosition1}</p>
                         <p>{experience.experienceCompany1}</p>
                     </div>
 
-                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xl:px-24">
+                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg lg:ml-10">
                         {/* Second Field */}
                         <p>{experience.experienceFromTo2}</p>
                         <p>{experience.experiencePosition2}</p>
                         <p>{experience.experienceCompany2}</p>
                     </div>
 
-                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xl:px-24">
+                    <div className="grid grid-cols-3 text-sm md:text-base lg:text-lg lg:ml-10">
                         {/* Third Field */}
                         <p>{experience.experienceFromTo3}</p>
                         <p >{experience.experiencePosition3}</p>

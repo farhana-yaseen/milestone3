@@ -22,20 +22,20 @@ const BasicInfo: FC<PersonalInfoProps> = ({ personalInfo, onPersonalInfoChange }
     return (
 
         <div>
-            <fieldset className="border-2 border-black py-3 2xl:py-20 ">
-                <legend className="text-center font-extrabold text-xl md:text-4xl 2xl:text-7xl lg:text-5xl mb-10">Personal Information</legend>
-
-                <div className="flex mt-14 ml-2 2xl:px-10 mb-5 xl:mb-10">
-
+            <fieldset className="border-2 border-black py-5 2xl:py-20 ">
+                <legend className="text-center font-extrabold text-xl md:text-4xl lg:text-3xl mb-10">Personal Information</legend>
+                
                     {/* Full Name */}
-                    <label className="font-bold mx-2 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:w-28 h-8 xl:w-40 2xl:w-60 2xl:h-16 2xl:mb-12 lg:w-32 lg:h-16 xl:mb-10">
-                        First Name:
-                    </label>
-                    <input name="fname" type="text" value={personalInfo.fname} onChange={onPersonalInfoChange} required className="rounded-lg lg:rounded-2xl border-2 border-gray-400 w-20 h-8 sm:w-32 md:w-36 lg:w-60 lg:h-10 xl:h-12 2xl:h-16 font-normal text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" />
+                    {/* First Name */}
+                <div className="flex 2xl:mb-12 2xl:px-10 mb-5 xl:mb-10">
+                    <label className="font-bold mx-2 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:w-28 h-8 lg:w-32 2xl:w-60 2xl:h-16 2xl:mb-12 lg:h-16 xl:mb-10">First Name:</label>
+                    <input type="text" name="fname" value={personalInfo.fname} onChange={onPersonalInfoChange} required className="rounded-lg lg:rounded-2xl border-2 border-gray-400 w-20 h-8 sm:w-32 md:w-36 lg:w-60 lg:h-10 xl:h-12 2xl:h-16 font-normal text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" />
+                </div>
+                
 
-                    <label className="font-bold mx-1 lg:mx-3 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:w-28 h-8 xl:w-40 2xl:w-60 2xl:h-16 lg:w-32 lg:h-16 xl:ml-2">
-                        Last Name:
-                    </label>
+                    {/* Last Name */}
+                <div className="flex 2xl:mb-12 2xl:px-10 mb-5 xl:mb-10">
+                    <label className="font-bold mx-1 lg:mx-3 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:w-28 h-8 lg:w-32 2xl:w-60 2xl:h-16 lg:h-16 xl:ml-2">Last Name:</label>
                     <input name="lname" type="text" value={personalInfo.lname} onChange={onPersonalInfoChange} required className="rounded-lg lg:rounded-2xl border-2 border-gray-400 w-20 h-8 sm:w-32 md:w-36 lg:w-60 lg:h-10 xl:h-12 2xl:h-16 font-normal text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" />
                 </div>
 

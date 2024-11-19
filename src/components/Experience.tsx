@@ -31,7 +31,7 @@ const Experience: FC<ExperienceProps> = ({ experience, onExperienceChange }) => 
             <fieldset className="border-2 border-black py-5 mt-8 lg:mt-10 lg:py-8 2xl:mt-16 px-3">
                 <legend className="text-center font-extrabold text-xl md:text-4xl 2xl:text-7xl lg:text-5xl">Work Experience</legend>
                 <label className="font-bold mb-3 block text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:mb-12 mx-2">Work Experience:</label>
-                <div className="grid grid-cols-3 font-bold text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl px-2 py-2">
+                <div className="grid grid-cols-3 font-bold text-sm md:text-base lg:text-xl px-2 py-2">
                     <label className="lg:text-center w-32 h-5 md:w-40 md:h-8 lg:w-52 lg:h-10 2xl:w-60">[From-To]</label>
                     <label className="lg:text-center w-32 h-5 md:w-40 md:h-8 lg:w-52 lg:h-10 2xl:w-60">[Job Position]</label>
                     <label className="lg:text-center w-32 h-5 md:w-40 md:h-8 lg:w-52 lg:h-10 xl:w-60 2xl:w-72">[Company Name]</label>
@@ -65,5 +65,4 @@ const Experience: FC<ExperienceProps> = ({ experience, onExperienceChange }) => 
     )
 }
 export default Experience
-// {
-//           
+         
